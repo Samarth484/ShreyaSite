@@ -6,13 +6,16 @@
   <title>Shreya Srivastava</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="shreya_dp.gif">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <audio autoplay>
+		<source src="introMusic.mp3" type="audio/mpeg">
+	</audio>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
 
@@ -22,7 +25,7 @@
          <li><a href="#about" class="scroll"><span class="fa fa-user"></span> About </a></li>
          <li><a href="#experience" class="scroll"><span class="fa fa-space-shuttle"></span> Experience</a></li>
          <li><a href="#portfolio" class="scroll"><span class="fa fa-picture-o"></span> Portfolio</a></li>
-         <li><a href="#contact" class="scroll"><span class="fa fa-envelope"></span> Contact</a></li>
+         <li><a href="#footer" class="scroll"><span class="fa fa-envelope"></span> Contact</a></li>
        </ul>
      </div>
   </div>
@@ -34,8 +37,7 @@
       <div class="title">
         <h1 class="ml11">
           <span class="text-wrapper">
-            <span class="line line1"></span>
-            <span class="letters">Shreya Srivastava</span>
+            <span class="letters" style="font-family: 'Permanent Marker', cursive;">Shreya Srivastava</span>
           </span>
         </h1>
 
@@ -46,8 +48,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       </div>
       <div class="row text-center">
-        <div class="border contact scroll"><a href="#contact" class="scroll"><h2 style="color: white;" id="borderText"><strong> CONTACT </strong></a></h2></div>
-        <div class="border resume"><h2 style="color: white;" id="borderText"><a href="https://drive.google.com/file/d/1ll7-DjJxrcshjh5T5aOQqbl4UBznifG4/view?usp=sharing"><strong> RESUME </strong></a></h2></div>
+        <div class="border contact animate scroll"><a href="#contact" class="scroll"><h2 style="color: white;" id="borderText"><strong> CONTACT </strong></a></h2></div>
+        <a href="https://drive.google.com/file/d/1ll7-DjJxrcshjh5T5aOQqbl4UBznifG4/view?usp=sharing"><div class="border resume animate"><h2 style="color: white;" id="borderText"><strong> Résumé </strong></h2></div></a>
       </div>
     </div>
   </section>
@@ -63,7 +65,7 @@
 
 <!-- Skilss -->
   <section class="skills" id="about">
-    <div class="text-center titles border">
+    <div class="text-center titles animate border">
       <h1 id="title"><strong>  SKILLS </strong></h1>
     </div>
     <h2 class="text-center" id="skills-label"><strong> Technologies: </strong></h2>
@@ -88,7 +90,7 @@
         <div class="skill">Blogging</div>
           <div class="skill">Content Writing</div>
     </div>
-    <div class="text-center titles border">
+    <div class="text-center titles animate border">
       <h1 id="title"><strong>  Certifications </strong></h1>
     </div>
     <h2 class="text-center" id="skills-label"><strong> Courses: </strong></h2>
@@ -109,7 +111,7 @@ Slides</a>  </div>
 
 <!-- Experience -->
   <section class="ex-timeline" id="experience">
-    <h1 class="text-center border titles" id="title"><strong> EXPERIENCE</strong> </h1>
+    <h1 class="text-center border titles animate animate" id="title"><strong> EXPERIENCE</strong> </h1>
     <div class="job-timeline">
       <ul class="timeline">
         <li class="timeline-event">
@@ -144,34 +146,13 @@ Slides</a>  </div>
           </div>
         </li>
       </ul>
-      <!-- <ul class="timeline">
-        <li class="timeline-event">
-          <label class="timeline-icon"></label>
-          <div class="timeline-event-copy">
-            <p class="timeline-thumbnail"> February 2018 - June 2018</p>
-            <h5 id="workplace"><a href="#" target="_blank">Amazon</a></h5>
-            <h5 id="jobPos"><strong>Lorem ipsum</strong></h5>
-            <p id="jobDesc"> • Quisque dictum placerat urna eget mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut cursus tincidunt tristique. </p>
-          </div>
-        </li>
-      </ul> -->
-      <!-- <ul class="timeline">
-        <li class="timeline-event">
-          <label class="timeline-icon"></label>
-          <div class="timeline-event-copy">
-            <p class="timeline-thumbnail"> December 2018 - Present </p>
-            <h5 id="workplace"><a href="#" target="_blank">Coke Cola</a></h5>
-            <h5 id="jobPos"><strong> Lorem ipsum </strong></h5>
-            <p id="jobDesc">• Quisque dictum placerat urna eget mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut cursus tincidunt tristique.</p>
-            </div>
-        </li>
-      </ul> -->
+
     </div>
   </section>
 
 <!-- Projects-->
-  <section class="portfolios" id="portfolio">
-    <h1 class="text-center border titles" id="title"><strong> PORTFOLIO </strong></h1>
+  <section class="portfolios animate" id="portfolio">
+    <h1 class="text-center border titles animate" id="title"><strong> PORTFOLIO </strong></h1>
     <div class="container">
 
        <div class="row">
@@ -180,7 +161,7 @@ Slides</a>  </div>
             <a class="thumbnail" href="https://www.linkedin.com/company/brandiverse/about/">
                <img src="data:image/png;base64,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" class="project-img">
             </a>
-            <h2 id="projectTitle"><strong>Work Profile</strong></h2>
+            <a href="https://www.linkedin.com/company/brandiverse/about/"><h2 id="projectTitle"><strong>Work Profile</strong></h2></a>
             <a href="https://bit.ly/33Q0UGp" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Certificate</strong></h2></a>
             <a href="https://bit.ly/3682ENI" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>L.O.R.</strong></h2></a>
           </div>
@@ -212,7 +193,7 @@ Slides</a>  </div>
                   </div>
                   </div>
       </div>
-      <h1 class="text-center border titles" id="title"><strong> Education </strong></h1>
+      <h1 class="text-center border titles animate" id="title"><strong> Education </strong></h1>
 
       <div class="row">
           <div class="col-md-6">
@@ -233,7 +214,7 @@ Slides</a>  </div>
                   </div>
                 </div>
         </div>
-        <h1 class="text-center border titles" id="title"><strong> Talks and Notable Glimpses </strong></h1>
+        <h1 class="text-center border titles animate" id="title"><strong> Talks and Notable Glimpses </strong></h1>
 
         <div class="row">
             <div class="col-md-6">
@@ -241,7 +222,7 @@ Slides</a>  </div>
                 <a class="thumbnail" href="https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079-1400x621.jpg">
                    <img src="https://media.giphy.com/media/l0HlKqIBxOhgYmAWk/giphy.gif" class="project-img">
                 </a>
-                <a href="https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079-1400x621.jpg"></a><h2 id="projectTitle"><strong>Virtual Talk</strong></h2>
+                <a href="https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079-1400x621.jpg"><h2 id="projectTitle"><strong>Virtual Talk</strong></h2></a>
               </div>
             </div>
 
@@ -254,27 +235,42 @@ Slides</a>  </div>
                     </div>
                   </div>
           </div>
+          <h1 class="text-center border titles animate" id="title"><strong> Articles & Blogs </strong></h1>
+
+          <div class="row">
+              <div class="col-md-6">
+                <div class="well">
+                  <a class="thumbnail" href="https://www.linkedin.com/pulse/internshala-student-partner-shreya-srivastava/?trackingId=FsOpwFY1RaO78wYskQTF7A%3D%3D">
+                     <img src="https://media.giphy.com/media/1rPXcTh9YjMcMuRal5/giphy.gif" class="project-img">
+                  </a>
+                  <a href="https://www.linkedin.com/pulse/internshala-student-partner-shreya-srivastava/?trackingId=FsOpwFY1RaO78wYskQTF7A%3D%3D"><h2 id="projectTitle"><strong>Article</strong></h2></a>
+                </div>
+              </div>
+          </div>
 
     </div>
   </section>
 
 <!-- contact -->
-  <section class="contact-section" id="contact">
-    <h1 class="text-center">Conect With Me!</h1>
+  <section class="contact-section animate" id="contact">
+    <h1 class="text-center">Connect With Me!</h1>
     <div class="contact-buttons">
       <a class="btn btn-linkedin btn-lg" href="https://www.linkedin.com/in/shreya-srivastava-1727691b0/" target="_blank" ><i class="fa fa-2x fa-linkedin"></i></a>
       <a class="btn btn-github btn-lg" href="https://github.com/ShreyaSri27" target="_blank"><i class="fa fa-2x fa-github"></i></a>
-      <a class="btn btn-twitter-square btn-lg" href="https://twitter.com/Shreya_Sri27" target="_blank" ><i class="fa fa-2x  fa-twitter-square"></i></a>
+      <a class="btn btn-twitter-square btn-twitter btn-lg" href="https://twitter.com/Shreya_Sri27" target="_blank" ><i class="fa fa-2x  fa-twitter-square"></i></a>
       <a class="btn btn-facebook btn-lg" href="" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
       <a class="btn btn-whatsapp btn-lg" href="https://wa.me/+919026842924?text=Hi%20Shreya!%20I%20just%20checked%20your%20website!😍🔥🔥" target="_blank"><i class="fa fa-2x fa-whatsapp"></i></a>
       <a class="btn btn-mobile btn-lg"  href="tel:902-684-2924" target="_blank"><i class="fa fa-2x fa-mobile"></i></a>
-      <a class="btn btn-mail btn-lg"  href="mailto:shreyasrivastava627@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope"></i></a>
+      <a class="btn btn-email btn-lg"  href="mailto:shreyasrivastava627@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope"></i></a>
 </div>
   </section>
 
 <!-- Footer -->
   <footer>
-    <p id="footer">Copyright © Shreya Srivastava 2020</p>
+      <div class="last">
+          <p id="footer">Copyright © Shreya Srivastava 2020</p>
+      </div>
+
   </footer>
 </body>
 
