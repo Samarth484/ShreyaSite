@@ -35,7 +35,7 @@ a:hover {
   height: 1000px;
 }
 #overlay {
-  background: rgba(0, 0, 0, 0.76);
+  background: rgba(0, 0, 0, 0.56);
   height: 1000px;
 }
 .skills {
@@ -55,8 +55,56 @@ a:hover {
 .portfolios {
   padding-top: 5px;
   margin-top: -20px;
-  background: #212121;
+  /* background: #212121; */
+  /* background: #3a6186;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+
 }
+/* #1d2d50, #133b5c, #1e5f74, #206a5d, #81b214, #a3d2ca, #5eaaa8, #056676 */
+.animate{
+  /* background-image: linear-gradient(130deg, #89253e,#6F1E51,#833471,#B53471,#ED4C67,#FDA7DF,#435A7E,#9980FA,#5758BB,#1B1464,#0652DD,#1289A7,#3a6186); */
+  background-image: linear-gradient(150deg, #1d2d50, #133b5c, #1e5f74, #206a5d, #81b214, #a3d2ca, #5eaaa8, #056676,#89253e,#6F1E51,#833471,#B53471,#ED4C67,#FDA7DF,#435A7E,#9980FA,#5758BB,#1B1464,#0652DD,#1289A7,#3a6186);
+
+  background-size: 600%;
+  animation: bganimation 50s infinite;
+
+}
+.animate2{
+  /* background-image: linear-gradient(130deg, #89253e,#6F1E51,#833471,#B53471,#ED4C67,#FDA7DF,#435A7E,#9980FA,#5758BB,#1B1464,#0652DD,#1289A7,#3a6186); */
+  background-image: linear-gradient(180deg, #1d2d50, #133b5c, #1e5f74, #206a5d, #81b214, #a3d2ca, #5eaaa8, #056676);
+
+  background-size: 600%;
+  animation: bganimationsecond 60s infinite;
+
+}
+@keyframes bganimation {
+  0%{
+    background-position: 0% 50%;
+  }
+
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+@keyframes bganimationsecond {
+  0%{
+    background-position: 0% 50%;
+  }
+  25%{
+    background-position: 50% 100%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
 .title {
   padding-bottom: 10px;
   width: 1100px;
@@ -64,6 +112,7 @@ a:hover {
   margin-left: auto;
   position: relative;
   top: 250px;
+
 }
 .titles {
   width: 790px;
@@ -73,6 +122,8 @@ a:hover {
   margin:0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  /* background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */ */
+
 }
 #title {
   font-size: 6.5em;
@@ -99,7 +150,7 @@ a:hover {
   font-size: 3rem;
   opacity: .8;
   padding: 15px;
-  margin: 5px;
+  margin: 10px;
   border-radius: 15px;
   position: relative;
   display: inline-block;
@@ -126,23 +177,25 @@ a:hover {
   border-color: #ff2a4a;
 }
 .resume {
-  top: 280px;
+  top: 230px;
   position: relative;
   font-size: 70%;
   width: 140px;
   display: inline-block;
   margin-left: 15px;
   cursor: pointer;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
+  margin-bottom: 200px;
 }
 .contact {
-  top: 280px;
+  top: 230px;
   position: relative;
   font-size: 70%;
   width: 140px;
   display: inline-block;
   cursor: pointer;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
+  margin-bottom: 200px;
 }
 #qualif {
   font-size: 3em;
@@ -156,8 +209,10 @@ footer {
   padding-bottom: 5px;
   width: 100%;
   bottom: 0;
+  height: 40px;
   position: relative;
   text-align: center;
+  /* padding-bottom: : -20px; */
 }
 .timeline {
   position: relative;
@@ -280,7 +335,11 @@ footer {
   color: #002b80;
 }
 .contact-section {
-  background-color: #333;
+  /* background-color: #333; */
+  background: #3a6186;  /* fallback for old browsers
+background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+
   background-size: cover;
   height: 350px;
   padding-top: 20px;
@@ -296,41 +355,63 @@ footer {
 	  background: #0E76A8;
 	  border-radius: 10px;
 	  color: #fff;
-	  border-width: 1px;
+	  border-width: 5px;
 	  border-style: solid;
 	  border-color: #084461;
 }
-.btn-drible {
-    background: #e64786;
-    border-radius: 10px;
-    color: white;
-    border-width: 1px;
-    border-style: solid;
+.btn-twitter {
+	  background: #1DA1F2;
+	  border-radius: 10px;
+	  color: #fff;
+	  border-width: 5px;
+	  border-style: solid;
 	  border-color: #084461;
 }
+
+.btn-whatsapp {
+	  background: #00E676;
+	  border-radius: 10px;
+	  color: #fff;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #084461;
+}
+.btn-mobile {
+    background: #43B51F;
+    border-radius: 10px;
+    color: white;
+    border-width: 5px;
+    border-style: solid;
+	  border-color: #084461;
+      margin: 10px;
+}
+
 .btn-github {
     background-color: #24292e;
     border-radius: 10px;
     color: white;
-    border-width: 1px;
+    border-width: 5px;
     border-style: solid;
 	  border-color: #084461;
+      margin: 10px;
 }
 .btn-email {
-    background-color: #141f1f;
+    background-color: #EACB3F;
     border-radius: 10px;
     color: white;
-    border-width: 1px;
+    border-width: 5px;
     border-style: solid;
 	  border-color: #084461;
+      margin: 10px;
 }
 .btn-facebook {
     background-color: #4267b2;
     border-radius: 10px;
     color: white;
-    border-width: 1px;
+    border-width: 5px;
     border-style: solid;
 	  border-color: #084461;
+      margin: 10px;
 }
 @media (min-width:1400px)   {
   .banner, .skills, .ex-timeline, .portfolios, .contact-section {
@@ -410,7 +491,8 @@ footer {
     padding-bottom: 10px;
   }
   #footer {
-    font-size: 3vw;
+    font-size: 10%;
+
   }
   .timeline {
     left: 0;
@@ -441,6 +523,9 @@ footer {
   }
   .view {
     font-size: 5.5vw;
+  }
+  .last{
+      height: 75%;
   }
 
 
